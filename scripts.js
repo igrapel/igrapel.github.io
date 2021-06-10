@@ -4,14 +4,12 @@ var text = [
   "Java",
   "Python",
   "HTML/CSS/JS",
-  "Attorney",
-  "Hebrew",
-  "Arabic",
-  "Spanish"
+  "Hebrew / Arabic / Spanish", 
+  "Attorney"
 ];
 var counter = 0;
 var elem = jQuery("#greeting");
-setInterval(change, 3000);
+setInterval(change, 2000);
 function change() {
   elem.html(text[counter]);
   counter++;
