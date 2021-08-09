@@ -48,7 +48,6 @@ label{
     font-size: 1.2em;
 }
 
-
 #btn {
   background-color: #c4afc4;
   border-radius: 8px;
@@ -56,6 +55,11 @@ label{
   width: 90px;
   height:40px;
   font-family: "Lora", serif;
-  font-size: 1.2em;
- 
+  font-size: 1.2em; 
+}
+
+#btn:hover {
+  background-color: #a3a3a3;
+  color: #222222;
+  cursor: pointer;
 }
