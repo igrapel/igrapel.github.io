@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
-  <title> Contact </title>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -17,20 +18,33 @@
     <div id="letter">
       <h1> Write to me!</h1>
       <br>
-      <textarea rows="18" name="contact" id="message" placeholder="What is on your mind?" required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+      <textarea rows="18" name="Message" id="message" placeholder="What is on your mind?" required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="na">
     </div>
 
-    <div>
-      <label for="full-name">Full Name:</label>
-      <input type="text" name="name" id ="full-name" placeholder="Jay Doe" required="">
-
-      <label for="email-address">Email Address: </label>
-      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <div id="inputs">
+      <label class="ins" for="full-name">Full Name:</label>
+      <input class="ins" type="text" name="name" id="full-name" placeholder="Jay Doe" required="">
+      <br>
+      <br>
+      <label class="ins" for="email-address">Email Address: </label>
+      <input class="ins" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+      <br>
+      <br>
+      <label class="ins" for="topic">Topic: </label>
+      <select class="ins" id="topic" name="topic">
+        <option value="General">General</option>
+        <option value="Tutoring">Tutoring</option>
+        <option value="Question">Question</option>
+        <option value="Complaint">Complaint</option>
+      </select>
+      <br>
+      <br>
+      <input id="btn" type="submit" value="Send">
     </div>
-    <input id="btn" type="submit" value="Send">
   </form>
-
 </body>
 
 </html>
+
+<!--marginLeft: "+=250px" -->
