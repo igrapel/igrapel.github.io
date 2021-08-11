@@ -18,7 +18,7 @@ body {
 }
 
 input {
-  margin: 20px 40px 10px 5px;
+  margin: 20px 10px 10px 5px;
   line-height: 1.2em;
 }
 
@@ -29,8 +29,14 @@ textarea {
   background-color: #c4afc4;
   background-attachment: local;
   background-image: linear-gradient(to right, white 20px, transparent 10px),
-  linear-gradient(to left, white 20px, transparent 10px),
-  repeating-linear-gradient(white,white 30px,#ccc 30px,#ccc 31px,white 31px);
+    linear-gradient(to left, white 20px, transparent 10px),
+    repeating-linear-gradient(
+      white,
+      white 30px,
+      #ccc 30px,
+      #ccc 31px,
+      white 31px
+    );
   line-height: 31px;
   padding: 8px 7px;
   margin: 6px;
@@ -38,24 +44,65 @@ textarea {
 
 #letter {
   background-color: #c4afc4;
-  width: 30%;
+  width: 27%;
   margin: auto;
   border-radius: 8px;
 }
 
-label{
-    font-family: "Lora", serif;
-    font-size: 1.2em;
+label {
+  font-size: 1.2em;
+  font-weight: 1200;
+  font-family: "Copperplate";
+  position: absolute;
+}
+
+#inputs {
+  width: 28%;
+  height: 30%;
+  /*text-align: center;*/
+  margin: 50px 10px 5px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  
+
+  background: rgb(34,190,195);
+  background: linear-gradient(0deg, rgb(129, 151, 151) 0%, rgb(223, 219, 212) 100%);
+  color: #00002d;
+  font-weight: bold;
+  opacity: 0.7;
+  vertical-align: middle;
+  /*display: inline-block;*/
+}
+
+.ins {
+  margin: 0px;
+  text-align: left;
+  float: left;
+  position: relative;
 }
 
 #btn {
-  background-color: #c4afc4;
+  background-color: lightblue;
   border-radius: 8px;
   color: #00002d;
   width: 90px;
-  height:40px;
+  height: 40px;
   font-family: "Lora", serif;
-  font-size: 1.2em; 
+  font-size: 1.2em;
+  text-align: center;
+
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
 }
 
 #btn:hover {
