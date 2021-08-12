@@ -5,7 +5,7 @@ $(document).ready(function () {
     var dist = $("#inputs").offset().left;
     w = $(window).width();
     w = w / 2;
-    w = w - 250;
+    w = w - 235;
     move = "+=" + w;
     console.log(move);
     $("#inputs").animate(
