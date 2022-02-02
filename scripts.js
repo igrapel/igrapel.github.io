@@ -1,10 +1,10 @@
 var text = [
   "AP Computer Science Teacher",
   "AP Mathematics Teacher",
-  "Java",
-  "Python",
-  "HTML/CSS/JS",
-  "Hebrew / Arabic / Spanish", 
+  "Java Developer",
+  "Python Developer",
+  "HTML/CSS/JS Developer",
+  "Hebrew / Arabic / Spanish Translator", 
   "Attorney"
 ];
 var counter = 0;
