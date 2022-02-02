@@ -9,7 +9,7 @@ $(document).ready(function () {
     l = $(letter).width();
     console.log("initial l: " + l);
     w = w / 2;
-    w = w - l / 2 - w * 0.1;
+    w = w - l / 2 - w * 0.08;
     move = "+=" + w;
     console.log("move :" + move);
     $("#inputs").animate(
