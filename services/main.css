@@ -1,72 +1,193 @@
-body {
-  font-family: "Lora", serif;
-  background-color: #00002d;
-  color: #ffe0fe;
-  margin: 0;
+/* Resume Styles */
+.resume-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 60px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    font-family: 'Lora', serif;
 }
 
-#sideNav {
-  background-color: #ffe0fe;
-  color: #00002d;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 17rem;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+.resume-header {
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-#sideNav .nav-link {
-  color: #00002d;
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding: 0.5rem 0;
-  text-align: center;
-  transition: all 0.2s ease;
+.resume-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-#sideNav .nav-link:hover {
-  background-color: #00002d;
-  color: #ffe0fe;
-  border-radius: 0.5rem;
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    color: #555;
 }
 
-.profile-pic {
-  width: 10rem;
-  border: 0.4rem solid rgba(0, 0, 0, 0.1);
+.contact-info i {
+    margin-right: 5px;
+    color: #2c3e50;
 }
 
-.social-icons a {
-  color: #00002d;
-  transition: opacity 0.3s ease;
+.contact-info a {
+    color: #2c3e50;
+    text-decoration: none;
 }
 
-.social-icons a:hover {
-  opacity: 0.6;
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
-.content {
-  margin-left: 17rem;
-  min-height: 100vh;
-  background-color: #00002d;
+.resume-section {
+    margin-bottom: 40px;
 }
 
-.email-link {
-  color: #ffe0fe;
-  font-size: 1.2rem;
-  text-decoration: none;
+.section-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
-.email-link:hover {
-  text-decoration: underline;
+.experience-item,
+.education-item {
+    margin-bottom: 30px;
 }
 
-.card ul {
-  list-style-type: square;
-  margin-left: 1.5rem;
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 20px;
 }
 
-.card strong {
-  color: #ffe0fe;
-  font-size: 1.5rem;
+.company {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 3px;
+}
+
+.job-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.degree {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.job-meta {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.location {
+    color: #666;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.dates {
+    color: #666;
+    font-style: italic;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.job-duties {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.job-duties li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.publications-list {
+    margin-left: 20px;
+}
+
+.publications-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.language-skills {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.language-item {
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .resume-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .job-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .job-meta {
+        text-align: left;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .resume-container {
+        box-shadow: none;
+        padding: 20px;
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    .section-title {
+        page-break-after: avoid;
+    }
+    
+    .experience-item,
+    .education-item {
+        page-break-inside: avoid;
+    }
 }
