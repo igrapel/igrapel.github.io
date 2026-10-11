@@ -1,425 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilan Grapel - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 60px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 3px solid #2c3e50;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            font-size: 1em;
-            color: #555;
-        }
-
-        .contact-info a {
-            color: #2c3e50;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 8px;
-            margin-top: 35px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .experience-item {
-            margin-bottom: 30px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-
-        .job-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #2c3e50;
-        }
-
-        .company {
-            font-weight: bold;
-            font-size: 1.15em;
-            color: #34495e;
-            margin-bottom: 3px;
-        }
-
-        .location {
-            color: #666;
-            font-style: italic;
-        }
-
-        .dates {
-            color: #666;
-            font-style: italic;
-            white-space: nowrap;
-        }
-
-        ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .education-item {
-            margin-bottom: 20px;
-        }
-
-        .degree {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .school {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: #34495e;
-        }
-
-        .publications li {
-            font-style: italic;
-        }
-
-        .language-skills {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .language-item {
-            flex: 1;
-            min-width: 200px;
-        }
-
-        @media print {
-            body {
-                background-color: white;
-            }
-            .container {
-                box-shadow: none;
-                padding: 20px;
-                margin: 0;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px 20px;
-                margin: 20px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .job-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .dates {
-                margin-top: 5px;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume · Ilan Grapel</title>
+<meta name="description" content="Ilan Grapel teaches computer science, physics and mathematics, has published machine learning research, and is a New York attorney.">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Ilan Grapel</h1>
-            <div class="contact-info">
-                Orlando, Florida | (347) 244-9565 | <a href="mailto:ilan.grapel@gmail.com">ilan.grapel@gmail.com</a>
-            </div>
-        </header>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">Ilan Grapel</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../">About</a>
+      <a href="../CV/" aria-current="page">Resume</a>
+      <a href="../writing/">Writing</a>
+      <a href="../contact/">Contact</a>
+      <button class="theme-toggle" type="button" id="theme-toggle">Dark</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="resume-head">
+    <h1>Resume</h1>
+    <p class="muted">Orlando, Florida · <a href="mailto:ilan.grapel@gmail.com">ilan.grapel@gmail.com</a> · Member of the New York State Bar</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#teaching">Teaching and leadership</a>
+      <a href="#legal">Legal</a>
+      <a href="#military">Military and international</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Languages and certifications</a>
+    </nav>
+  </section>
 
-        <section>
-            <h2>Legal Research Experience</h2>
-
-            <div class="experience-item">
-                <div class="company">Independent Legal Research <span class="location">Orlando, Florida</span></div>
-                <div class="job-header">
-                    <span class="job-title">Legal Researcher</span>
-                    <span class="dates">2024-2025</span>
-                </div>
-                <ul>
-                    <li>Conducted research on the Individuals with Disabilities Education Act (IDEA) to determine whether a school district violated a student's rights.</li>
-                    <li>Analyzed case law and provisions to assess compliance with federal special education requirements.</li>
-                    <li>Researched contractual interpretation for a pension reinstatement claim.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">DeJusticia <span class="location">Bogotá, Colombia</span></div>
-                <div class="job-header">
-                    <span class="job-title">Legal Researcher in Department of Transitional Justice</span>
-                    <span class="dates">2013</span>
-                </div>
-                <ul>
-                    <li>Researched amnesty agreement guidelines for Colombia's peace negotiations.</li>
-                    <li>Studied the concept of joint criminal enterprise and its application to the conflict in Colombia.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">The Bronx Defenders <span class="location">Bronx, New York</span></div>
-                <div class="job-header">
-                    <span class="job-title">Legal Intern</span>
-                    <span class="dates">2013</span>
-                </div>
-                <ul>
-                    <li>Drafted affidavits and motions to help clients enforce their procedural rights.</li>
-                    <li>Updated the criminal law department on developments in New York criminal law.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">The Office of the Georgia Attorney General <span class="location">Atlanta, Georgia</span></div>
-                <div class="job-header">
-                    <span class="job-title">Extern</span>
-                    <span class="dates">2012</span>
-                </div>
-                <ul>
-                    <li>Investigated the scope of Georgia's sovereign immunity for defenses in tort claims against the State.</li>
-                    <li>Wrote and researched motions to dismiss for failure to comply with the Georgia Tort Claims Act.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Transitional Justice Institute, University of Ulster <span class="location">Belfast, Northern Ireland, United Kingdom</span></div>
-                <div class="job-header">
-                    <span class="job-title">Legal Intern for Conflict Resolution Research</span>
-                    <span class="dates">2012</span>
-                </div>
-                <ul>
-                    <li>Conducted a study on the duty to prosecute for the Institute's amnesty guidelines and commentary.</li>
-                    <li>Cataloged the perception of constitutionalism in post-conflict regimes from around the globe.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">The Resettlement Legal Aid Project <span class="location">Cairo, Egypt</span></div>
-                <div class="job-header">
-                    <span class="job-title">Legal Intern</span>
-                    <span class="dates">2011</span>
-                </div>
-                <ul>
-                    <li>Interviewed Sudanese and Iraqi refugees to gather facts about their flight from their homelands.</li>
-                    <li>Prepared memoranda advocating the refugees' asylum claims before the United Nations.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Supreme Court of Israel <span class="location">Jerusalem, Israel</span></div>
-                <div class="job-header">
-                    <span class="job-title">Foreign Law Clerk, Justice Hanan Melcer</span>
-                    <span class="dates">2010</span>
-                </div>
-                <ul>
-                    <li>Drafted memoranda analyzing administrative, constitutional, immigration, and human rights issues.</li>
-                    <li>Researched American, British, and Canadian law to provide a comparative analysis with Israeli law.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Teaching Experience</h2>
-
-            <div class="experience-item">
-                <div class="company">Meoros High School <span class="location">Orlando, Florida</span></div>
-                <div class="job-header">
-                    <span class="job-title">IT Coordinator, Assistant to General Studies Coordinator</span>
-                    <span class="dates">2024-Present</span>
-                </div>
-                <ul>
-                    <li>Supervise three general studies teachers to ensure they comply with school standards.</li>
-                    <li>Manage and troubleshoot the school's technology operations.</li>
-                    <li>Instructed courses in mathematics, computer science, and Hebrew as a second language.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Nail IB (nailib.com/team/ilan-grapel) <span class="location">Remote</span></div>
-                <div class="job-header">
-                    <span class="job-title">IB Video Content Producer for Mathematics and Physics</span>
-                    <span class="dates">2023-Present</span>
-                </div>
-                <ul>
-                    <li>Created online content for the IB Math AA HL course, which has led to 13,000 enrolled students.</li>
-                    <li>Filmed video lessons for curriculum standards.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Seminole High School <span class="location">Sanford, Florida</span></div>
-                <div class="job-header">
-                    <span class="job-title">AP Calculus Teacher and AP Computer Science Tutor</span>
-                    <span class="dates">2022-2024</span>
-                </div>
-                <ul>
-                    <li>Led AP Calculus AB classes to an 86% pass rate, surpassing the state average by over 20%.</li>
-                    <li>Mentored International Baccalaureate students in computer science and physics extended essay research</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Florida International University <span class="location">Miami, Florida</span></div>
-                <div class="job-header">
-                    <span class="job-title">NSF Research Experience for Teachers Fellow</span>
-                    <span class="dates">2020-2022</span>
-                </div>
-                <ul>
-                    <li>Analyzed activation functions for adversarial machine learning algorithms.</li>
-                    <li>Researched Erdős-Rényi graphs and algorithms for network defense across various topologies.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Coral Gables Senior High School <span class="location">Miami, Florida</span></div>
-                <div class="job-header">
-                    <span class="job-title">Mathematics, Computer Science, and Legal Studies Teacher</span>
-                    <span class="dates">2017-2022</span>
-                </div>
-                <ul>
-                    <li>Achieved AP Computer Science pass rates over 20% higher than the district average.</li>
-                    <li>Prepared students in HTML/CSS, Python, JavaScript, and Java, leading to over 100 certifications—setting a record within Miami-Dade Public Schools.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Magen David Academy <span class="location">Panama City, Panama</span></div>
-                <div class="job-header">
-                    <span class="job-title">Math Department Chairperson, Teacher, and Consultant</span>
-                    <span class="dates">2015-2017</span>
-                </div>
-                <ul>
-                    <li>Oversaw math department vertical alignment and teachers from elementary school through high school.</li>
-                    <li>Taught courses in AP Calculus (AB and BC), AP Statistics, Algebra II, Algebra I, and Personal Finance.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">Yeda Plus <span class="location">Ramat Gan, Israel</span></div>
-                <div class="job-header">
-                    <span class="job-title">Teacher, Consultant, and Editor</span>
-                    <span class="dates">2014-2017</span>
-                </div>
-                <ul>
-                    <li>Taught quantitative and logical reasoning classes for tests such as the GRE, SAT, and LSAT.</li>
-                    <li>Advised students during their application processes to undergraduate and graduate programs.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Middle East Research Experience</h2>
-
-            <div class="experience-item">
-                <div class="company">The Australia/Israel & Jewish Affairs Council (AIJAC) <span class="location">Melbourne, Australia</span></div>
-                <div class="job-header">
-                    <span class="job-title">Goldman Fellow</span>
-                    <span class="dates">2009</span>
-                </div>
-                <ul>
-                    <li>Monitored Arabic-language media coverage in Australia.</li>
-                    <li>Provided sources for a parliamentary submission on the classification of Hezbollah as a terrorist group.</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="company">The Israel Project <span class="location">Jerusalem, Israel</span></div>
-                <div class="job-header">
-                    <span class="job-title">Media Fellow</span>
-                    <span class="dates">2008</span>
-                </div>
-                <ul>
-                    <li>Researched and wrote historical papers and press releases for international journalists.</li>
-                    <li>Translated Arabic, Hebrew, and English documents for research, media review, and publications.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-
-            <div class="education-item">
-                <div class="school">Emory University School of Law <span class="location">Atlanta, GA</span></div>
-                <div class="degree">Juris Doctor, Member of State Bar of New York</div>
-                <div class="dates">2012</div>
-            </div>
-
-            <div class="education-item">
-                <div class="school">Johns Hopkins University <span class="location">Baltimore, MD</span></div>
-                <div class="degree">Bachelor of Arts in International Relations with a Minor in Economics</div>
-                <div class="dates">2004</div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Publications</h2>
-            <ul class="publications">
-                <li>Towards Parametric Robust Activation Functions in Adversarial Machine Learning, Proceedings of the International Conference on Learning Representations (ICLR), 2023</li>
-                <li>Land reform in Colombia: One step forward, two steps back, TerraNullius, November 26, 2013</li>
-                <li>Wrongfully Imprisoned in Egypt, Working on Behalf of the Wrongfully Imprisoned in Georgia, Atlanta Lawyer, February 2012</li>
-                <li>In Egypt, Jailed but Not Broken, Washington Post, January 1, 2012</li>
-                <li>A Willing Ally to Hamas's Hatred, The Australian, July 1, 2009</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Foreign Language Skills</h2>
-            <div class="language-skills">
-                <div class="language-item">Hebrew (Alta Overall Score: 10)</div>
-                <div class="language-item">Arabic (ILR Score: 3)</div>
-                <div class="language-item">Spanish (Proficient)</div>
-            </div>
-        </section>
+  <section class="resume-section" id="teaching">
+    <h2>Teaching and leadership experience</h2>
+    <div class="entries">
+    <div class="entry">
+      <div class="entry-when">2026–Present</div>
+      <div class="entry-body">
+        <h3>Hagerty High School <span class="entry-place">Oviedo, Florida</span></h3>
+        <div class="entry-role">AP Physics C Teacher (Mechanics and Electricity and Magnetism, combined)</div>
+      </div>
     </div>
+    <div class="entry">
+      <div class="entry-when">2024–2026</div>
+      <div class="entry-body">
+        <h3>Meoros High School <span class="entry-place">Orlando, Florida</span></h3>
+        <div class="entry-role">Assistant to the General Studies Coordinator, Mathematics and Computer Science Teacher</div>
+        <ul>
+          <li>Oversaw the school's information technology systems and support for students and faculty.</li>
+          <li>Supervised and evaluated three general studies teachers, ensuring compliance with school standards.</li>
+          <li>Coordinated AP and SAT exam administration and supported SAT study sessions.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2023–2025</div>
+      <div class="entry-body">
+        <h3>Nail IB <span class="entry-place">Remote</span></h3>
+        <div class="entry-role">IB Mathematics and IB Physics Video Content Producer</div>
+        <ul>
+          <li>Created IB Math AA HL and IB Physics HL courses, which reached about 13,000 students globally.</li>
+          <li>Produced and delivered instructional video content for IB Mathematics and Physics courses.</li>
+          <li><a href="https://nailib.com/team/ilan-grapel">nailib.com/team/ilan-grapel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2022–2024</div>
+      <div class="entry-body">
+        <h3>Seminole High School <span class="entry-place">Sanford, Florida</span></h3>
+        <div class="entry-role">AP Calculus and Algebra II Teacher</div>
+        <ul>
+          <li>Achieved AP Calculus pass rates exceeding the state average by over 20%.</li>
+          <li>Mentored IB physics and computer science students in their extended essays.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2020–2022</div>
+      <div class="entry-body">
+        <h3>Florida International University <span class="entry-place">Miami, Florida</span></h3>
+        <div class="entry-role">NSF Research Experience for Teachers Fellow (Summer)</div>
+        <ul>
+          <li>Researched adversarial machine learning and algorithms for network defense in an NSF-funded program.</li>
+          <li>Selected for the NSF fellowship three times; among fewer than 5% of applicants selected all three years.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2017–2022</div>
+      <div class="entry-body">
+        <h3>Coral Gables Senior High School <span class="entry-place">Miami, Florida</span></h3>
+        <div class="entry-role">AP/IB Computer Science, Mathematics, and Legal Studies Teacher</div>
+        <ul>
+          <li>Led AP Computer Science classes to pass rates 20% greater than the state average.</li>
+          <li>Achieved the district's highest certification rates in HTML/CSS, Python, JavaScript, and Java.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2015–2017</div>
+      <div class="entry-body">
+        <h3>Magen David Academy <span class="entry-place">Panama City, Panama</span></h3>
+        <div class="entry-role">Math Department Chairperson and Teacher</div>
+        <ul>
+          <li>Directed vertical alignment of the math department and managed K–12 teaching staff.</li>
+          <li>Taught courses in AP Calculus (AB and BC), AP Statistics, Algebra II, Algebra I, and Personal Finance.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2014–2016</div>
+      <div class="entry-body">
+        <h3>Yeda Plus <span class="entry-place">Ramat Gan, Israel</span></h3>
+        <div class="entry-role">Teacher, Consultant, and Editor</div>
+        <ul>
+          <li>Taught quantitative and logical reasoning classes for tests such as the GRE, SAT, and LSAT.</li>
+          <li>Advised students during their application processes to undergraduate and graduate programs.</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="resume-section" id="legal">
+    <h2>Legal experience</h2>
+    <div class="entries">
+    <div class="entry">
+      <div class="entry-when">2025–Present</div>
+      <div class="entry-body">
+        <h3>The Heritage, LLC</h3>
+        <div class="entry-role">Legal Researcher</div>
+        <ul>
+          <li>Conduct legal research and analysis on corruption cases against prominent foreign political figures, identifying procedural and legal deficiencies in the charges and proceedings.</li>
+          <li>Research and analyze violations of international humanitarian and human rights law in conflict regions, including government complicity.</li>
+          <li>Prepare written rule-of-law analyses for publication in multiple international outlets, drawing on English-, Arabic-, and Spanish-language source material.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2013</div>
+      <div class="entry-body">
+        <h3>DeJusticia <span class="entry-place">Bogotá, Colombia</span></h3>
+        <div class="entry-role">Legal Researcher in Department of Transitional Justice</div>
+        <ul>
+          <li>Researched amnesty agreement guidelines for Colombia's peace negotiations.</li>
+          <li>Studied the concept of joint criminal enterprise and how it applies to the conflict in Colombia.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2013</div>
+      <div class="entry-body">
+        <h3>Bronx Defenders <span class="entry-place">Bronx, New York</span></h3>
+        <div class="entry-role">Legal Intern</div>
+        <ul>
+          <li>Drafted affidavits and motions under attorney supervision to assert clients' procedural rights.</li>
+          <li>Updated the criminal law department on developments in New York criminal law.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <h3>The Office of the Georgia Attorney General <span class="entry-place">Atlanta, Georgia</span></h3>
+        <div class="entry-role">Extern</div>
+        <ul>
+          <li>Investigated the scope of Georgia's sovereign immunity for defenses in tort claims against the State.</li>
+          <li>Wrote and researched motions of dismissal for failure to comply with the Georgia Tort Claims Act.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <h3>Transitional Justice Institute, University of Ulster <span class="entry-place">Belfast, Northern Ireland</span></h3>
+        <div class="entry-role">Legal Fellow for Conflict Resolution Research</div>
+        <ul>
+          <li>Undertook a study of the duty to prosecute for the Institute's amnesty guidelines and commentary.</li>
+          <li>Cataloged the perception of constitutionalism in post-conflict regimes from around the globe.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2010</div>
+      <div class="entry-body">
+        <h3>Supreme Court of Israel <span class="entry-place">Jerusalem, Israel</span></h3>
+        <div class="entry-role">Foreign Law Clerk, Justice Hanan Melcer</div>
+        <ul>
+          <li>Drafted memoranda analyzing administrative, constitutional, immigration, and human rights issues.</li>
+          <li>Researched American, British, and Canadian law to provide a comparative analysis with Israeli law.</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="resume-section" id="military">
+    <h2>Military and international experience</h2>
+    <div class="entries">
+    <div class="entry">
+      <div class="entry-when">2009</div>
+      <div class="entry-body">
+        <h3>The Australia/Israel &amp; Jewish Affairs Council (AIJAC) <span class="entry-place">Melbourne, Australia</span></h3>
+        <div class="entry-role">Goldman Fellow</div>
+        <ul>
+          <li>Provided sources for a parliamentary submission on the classification of Hezbollah as a terrorist group.</li>
+          <li>Monitored the Arabic-language media of Australia for incitement.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2008</div>
+      <div class="entry-body">
+        <h3>The Israel Project <span class="entry-place">Jerusalem, Israel</span></h3>
+        <div class="entry-role">Media Fellow</div>
+        <ul>
+          <li>Researched and wrote historical papers and press releases for international journalists.</li>
+          <li>Translated Arabic and Hebrew documents for research, media review, and publications.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2005–2007</div>
+      <div class="entry-body">
+        <h3>Israel Defense Forces <span class="entry-place">West Bank and Israel</span></h3>
+        <div class="entry-role">Paratrooper</div>
+        <ul>
+          <li>Received leadership and field training and commanded teams of up to thirty soldiers.</li>
+          <li>Translated between the Arabic-speaking populations and the Israeli soldiers during missions.</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="resume-section" id="education">
+    <h2>Education</h2>
+    <div class="entries">
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <h3>Emory University School of Law <span class="entry-place">Atlanta, Georgia</span></h3>
+        <div class="entry-role">Juris Doctor</div>
+        <ul>
+          <li>Member, New York State Bar (admitted 2013).</li>
+          <li>Returned to Emory and completed the J.D. after missing a semester due to wrongful imprisonment abroad.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2004</div>
+      <div class="entry-body">
+        <h3>Johns Hopkins University <span class="entry-place">Baltimore, Maryland</span></h3>
+        <div class="entry-role">Bachelor of Arts in International Relations with a Minor in Economics</div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="resume-section" id="publications">
+    <h2>Publications</h2>
+    <div class="entries">
+    <div class="entry">
+      <div class="entry-when">2023</div>
+      <div class="entry-body">
+        <div class="pub-title">Towards Parametric Robust Activation Functions in Adversarial Machine Learning</div>
+        <div class="small muted">Proceedings of the International Conference on Learning Representations (ICLR), 2023</div>
+        <div class="small"><a href="https://discovery.fiu.edu/display/pub543976">Publication record at FIU</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <div class="pub-title">In Egypt, Jailed but Not Broken</div>
+        <div class="small muted">The Washington Post, 2012</div>
+        <div class="small"><a href="https://www.washingtonpost.com/opinions/in-egypt-jailed-but-not-broken/2011/12/15/gIQACpWyUP_story.html">Read at washingtonpost.com</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <div class="pub-title">Wrongfully Imprisoned in Egypt, Working on Behalf of the Wrongfully Imprisoned in Georgia</div>
+        <div class="small muted">Atlanta Lawyer, 2012</div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2009</div>
+      <div class="entry-body">
+        <div class="pub-title">A Willing Ally to Hamas's Hatred</div>
+        <div class="small muted">The Australian, 2009</div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="resume-section" id="skills">
+    <h2>Languages and certifications</h2>
+    <dl class="facts">
+      <dt class="label">Arabic</dt>
+      <dd>Fluent in Levantine, Egyptian, and literary Arabic</dd>
+      <dt class="label">Hebrew</dt>
+      <dd>Fluent</dd>
+      <dt class="label">Spanish</dt>
+      <dd>Proficient</dd>
+      <dt class="label">Teaching</dt>
+      <dd>Florida certifications in Mathematics (6–12), Computer Science (K–12), Physics (6–12), and Social Science (6–12)</dd>
+      <dt class="label">Courses taught</dt>
+      <dd>AP and IB Computer Science, AP Physics C (Mechanics and Electricity and Magnetism), AP Calculus AB and BC, AP Statistics</dd>
+      <dt class="label">Programming</dt>
+      <dd>Python, Java, JavaScript, HTML/CSS</dd>
+    </dl>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Ilan Grapel · Orlando, Florida</span>
+    <nav aria-label="Elsewhere">
+      <a href="mailto:ilan.grapel@gmail.com">ilan.grapel@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ilan-grapel-a2192217/">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+<script src="../site.js"></script>
 </body>
 </html>

@@ -1,102 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ilan Grapel's Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Custom fonts for this template -->
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-  <link href="/css/fontawesome/all.min.css" rel="stylesheet">
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.j"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilan Grapel</title>
+<meta name="description" content="Ilan Grapel teaches computer science, physics and mathematics, has published machine learning research, and is a New York attorney.">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="/">
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/personal_pic.JPG" alt="pic">
-      </span>
-    </a>
-    <hr>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://igrapel.github.io/CV">Curriculum Vitae</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://github.com/igrapel">Projects</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://igrapel.github.io/contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid main-text p-5">
-    <div class="mb-2">
-      <h1 id="title">Ilan Grapel</h1>
-
-      <div class="subheading m-3" id="email">
-        <a href="mailto:ib.ilanc@gmail.com">ib.ilanc@gmail.com</a>
-      </div>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/ilan.grapel/">
-        <i class="fa fa-facebook-square" style="font-size:42px"></i>
-      </a>
-      <a href="https://github.com/igrapel">
-        <i class="fa fa-github" style="font-size:42px"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ilan-grapel-a2192217/">
-        <i class="fa fa-linkedin-square" style="font-size:42px"></i>
-      </a>
-    </div>
-    <div class="container-fluid p-0">
-      <div class="w-75 mx-auto m-5">
-
-        <h1 id="greeting" class="animate__animated animate__bounce border-top border-bottom">
-          Teacher
-        </h1>
-      </div>
-    </div>
-
-    <h3> Educator </h3>
-    <p class="font-italic w-75 p-3 mx-auto"> I teach IB and AP computer science and mathematics, with teaching certifications in mathematics, physics, and social studies. In addition to success on their AP and IB assessments, more than a hundred students earned Microsoft certifications in HTML/CSS, JavaScript, Python, and Java.</p>
-    <h3> Coder </h3>
-    <p class="font-italic w-75 p-3 mx-auto"> Through teaching, I gained experience and certified with Python, Java, and website development (HTML/CSS/Javascript). I have particular interests in machine learning, cryptography, and mathematics visualizations.
-    </p>
-
-    <h3> Attorney </h3>
-    <p class="font-italic w-75 p-3 mx-auto"> I researched and wrote legal briefs and memoranda for the Supreme Court of Israel, Ulster University's Transitional Justice Institute, Dejusticia (a Colombian NGO devoted to conflict resolution), the Bronx Defenders, and the Georgia Attorney General.
-    </p>
-
-    <h3> Researcher </h3>
-    <p class="font-italic w-75 p-3 mx-auto"> During my years in the Middle East, I used my Arabic and Hebrew language skills to research and write for various organizations. I published my articles in myriad publications, including the Washington Post and The Australian. My research also contributed to press releases for international media outlets.
-    </p>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./">Ilan Grapel</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="./" aria-current="page">About</a>
+      <a href="CV/">Resume</a>
+      <a href="writing/">Writing</a>
+      <a href="contact/">Contact</a>
+      <button class="theme-toggle" type="button" id="theme-toggle">Dark</button>
+    </nav>
   </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div class="portrait" aria-hidden="true">IG<img src="images/personal_pic.JPG" alt="" onerror="this.remove()"></div>
+    <div class="hero-text">
+      <h1>Ilan Grapel</h1>
+      <p class="lede">I teach <mark>computer science</mark>, physics, and mathematics, have published
+      <mark>machine learning</mark> research, and am a <mark>New York attorney</mark>.</p>
+    </div>
+  </section>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="scripts.js"> </script>
+  <section class="prose">
+    <p>I am based in Orlando, Florida, and teach AP Physics C at Hagerty High School. Before that I
+    taught AP and IB Computer Science in Miami, oversaw information technology at Meoros High School,
+    and built IB mathematics and physics video courses for Nail IB that reached about 13,000 students.
+    I also spent three summers as a National Science Foundation research fellow at Florida
+    International University, working on adversarial machine learning.</p>
+    <p>I came to teaching from law. I hold a J.D. from Emory, clerked at the Supreme Court of Israel,
+    and researched transitional justice in Colombia and Northern Ireland. I still work in law: since
+    2025 I have been a legal researcher at The Heritage, LLC, covering corruption cases and
+    international humanitarian and human rights law.</p>
+    <p>I am looking for work in technology education, computer science teaching, or legal technology.
+    My <a href="CV/">resume</a> has the details, and you can <a href="contact/">write to me</a> directly.</p>
+  </section>
+
+  <section>
+    <h2>At a glance</h2>
+    <dl class="facts">
+      <dt class="label">Now</dt>
+      <dd>AP Physics C teacher, Hagerty High School. Legal researcher, The Heritage, LLC.</dd>
+      <dt class="label">Code</dt>
+      <dd>Python, Java, JavaScript, HTML/CSS</dd>
+      <dt class="label">Education</dt>
+      <dd>J.D., Emory University School of Law. B.A., Johns Hopkins University.</dd>
+      <dt class="label">Bar</dt>
+      <dd>New York, admitted 2013</dd>
+      <dt class="label">Teaching</dt>
+      <dd>Florida certifications in Mathematics (6–12), Computer Science (K–12), Physics (6–12), and Social Science (6–12)</dd>
+      <dt class="label">Courses</dt>
+      <dd>AP and IB Computer Science, AP Physics C (Mechanics and Electricity and Magnetism), AP Calculus AB and BC, AP Statistics</dd>
+      <dt class="label">Languages</dt>
+      <dd>English, Arabic (fluent), Hebrew (fluent), Spanish (proficient)</dd>
+      <dt class="label">Worked in</dt>
+      <dd>United States, Israel, Panama, Colombia, Northern Ireland, Australia</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Three fields</h2>
+    <div class="fields">
+      <div class="field">
+        <h3>Computer science teaching</h3>
+        <ul>
+          <li>AP Computer Science pass rates 20% above the state average.</li>
+          <li>The district's highest certification rates in HTML/CSS, Python, JavaScript, and Java.</li>
+          <li>IB Math AA HL and IB Physics HL video courses that reached about 13,000 students.</li>
+        </ul>
+        <a class="more" href="CV/#teaching">Teaching and leadership experience</a>
+      </div>
+      <div class="field">
+        <h3>Technology and research</h3>
+        <ul>
+          <li>Paper on robust activation functions in the Proceedings of ICLR, 2023.</li>
+          <li>NSF research fellow at FIU for three summers, on adversarial machine learning and network defense.</li>
+          <li>Oversaw a school's information technology systems and support.</li>
+        </ul>
+        <a class="more" href="writing/">Publications</a>
+      </div>
+      <div class="field">
+        <h3>Law</h3>
+        <ul>
+          <li>Foreign law clerk to Justice Hanan Melcer, Supreme Court of Israel.</li>
+          <li>Amnesty guideline research for Colombia's peace negotiations.</li>
+          <li>Current research on corruption cases and human rights law.</li>
+        </ul>
+        <a class="more" href="CV/#legal">Legal experience</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected writing</h2>
+    <div class="entries">
+    <div class="entry">
+      <div class="entry-when">2023</div>
+      <div class="entry-body">
+        <div class="pub-title">Towards Parametric Robust Activation Functions in Adversarial Machine Learning</div>
+        <div class="small muted">Proceedings of the International Conference on Learning Representations (ICLR), 2023</div>
+        <div class="small"><a href="https://discovery.fiu.edu/display/pub543976">Publication record at FIU</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <div class="pub-title">In Egypt, Jailed but Not Broken</div>
+        <div class="small muted">The Washington Post, 2012</div>
+        <div class="small"><a href="https://www.washingtonpost.com/opinions/in-egypt-jailed-but-not-broken/2011/12/15/gIQACpWyUP_story.html">Read at washingtonpost.com</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-when">2012</div>
+      <div class="entry-body">
+        <div class="pub-title">Wrongfully Imprisoned in Egypt, Working on Behalf of the Wrongfully Imprisoned in Georgia</div>
+        <div class="small muted">Atlanta Lawyer, 2012</div>
+      </div>
+    </div>
+    </div>
+    <a class="more" href="writing/">All publications</a>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Ilan Grapel · Orlando, Florida</span>
+    <nav aria-label="Elsewhere">
+      <a href="mailto:ilan.grapel@gmail.com">ilan.grapel@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ilan-grapel-a2192217/">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
-
 </html>

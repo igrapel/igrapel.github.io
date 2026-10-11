@@ -1,50 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.j"></script>
-  <script src="scripts.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Ilan Grapel</title>
+<meta name="description" content="Ilan Grapel teaches computer science, physics and mathematics, has published machine learning research, and is a New York attorney.">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">Ilan Grapel</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../">About</a>
+      <a href="../CV/">Resume</a>
+      <a href="../writing/">Writing</a>
+      <a href="../contact/" aria-current="page">Contact</a>
+      <button class="theme-toggle" type="button" id="theme-toggle">Dark</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="prose">
+    <h1>Contact</h1>
+    <p class="lede">Email is the fastest way to reach me.</p>
+  </section>
 
-  <form action="https://formspree.io/f/xqkbojlk" method="POST">
+  <section>
+    <dl class="contact-list">
+      <dt class="label">Email</dt>
+      <dd><a href="mailto:ilan.grapel@gmail.com">ilan.grapel@gmail.com</a></dd>
+      <dt class="label">LinkedIn</dt>
+      <dd><a href="https://www.linkedin.com/in/ilan-grapel-a2192217/">linkedin.com/in/ilan-grapel-a2192217</a></dd>
+    </dl>
+  </section>
 
-    <div id="letter">
-      <h1> Write to me!</h1>
-      <br>
-      <textarea rows="18" name="Message" id="message" placeholder="What is on your mind?" required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="na">
-    </div>
-
-    <div id="inputs">
-      <label class="ins" for="full-name">Full Name:</label>
-      <input class="ins" type="text" name="name" id="full-name" placeholder="First Last" required="">
-      <br>
-      <br>
-      <label class="ins" for="email-address">Email Address: </label>
-      <input class="ins" type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-      <br>
-      <br>
-      <label class="ins" for="topic">Topic: </label>
-      <select class="ins" id="topic" name="topic">
-        <option value="General">General</option>
-        <option value="Tutoring">Tutoring</option>
-        <option value="Question">Question</option>
-      </select>
-      <br>
-      <br>
-      <input id="btn" type="submit" value="Send">
-    </div>
-  </form>
+  <section>
+    <h2>Send a message</h2>
+    <form action="https://formspree.io/f/xqkbojlk" method="post">
+      <input type="hidden" name="_subject" value="Message from igrapel.github.io">
+      <div class="form-row">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email address</label>
+        <input id="email" name="_replyto" type="email" autocomplete="email" required>
+      </div>
+      <div class="form-row">
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>General</option>
+          <option>Work opportunity</option>
+          <option>Tutoring</option>
+          <option>Question</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+      </div>
+      <button type="submit">Send message</button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Ilan Grapel · Orlando, Florida</span>
+    <nav aria-label="Elsewhere">
+      <a href="mailto:ilan.grapel@gmail.com">ilan.grapel@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ilan-grapel-a2192217/">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+<script src="../site.js"></script>
 </body>
-
 </html>
-
-<!--marginLeft: "+=250px" -->
